@@ -7,7 +7,9 @@ const { check, validationResult } = require('express-validator');
 const User = require('../../models/User');
 const Board = require('../../models/Board');
 
-// Add a board
+// @route    POST api/board
+// @desc     Add board
+// @access   Private
 router.post(
   '/',
   [auth, [check('title', 'Title is required').not().isEmpty()]],
@@ -46,7 +48,9 @@ router.post(
   }
 );
 
-// Get user's boards
+// @route    GET api/board/
+// @desc     Get user's boards
+// @access   Private
 router.get('/', auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id);
@@ -63,7 +67,9 @@ router.get('/', auth, async (req, res) => {
   }
 });
 
-// Get a board by id
+// @route    GET api/board/:id
+// @desc     Get board by ID
+// @access   Private
 router.get('/:id', auth, async (req, res) => {
   try {
     const board = await Board.findById(req.params.id);
@@ -78,7 +84,10 @@ router.get('/:id', auth, async (req, res) => {
   }
 });
 
-// Get a board's activity
+
+// @route    GET api/ /:boardId
+// @desc     Get board activity
+// @access   Private
 router.get('/activity/:boardId', auth, async (req, res) => {
   try {
     const board = await Board.findById(req.params.boardId);
@@ -93,7 +102,9 @@ router.get('/activity/:boardId', auth, async (req, res) => {
   }
 });
 
-// Change a board's title
+// @route    PATCH api/ /:id
+// @desc     Update board title
+// @access   Private
 router.patch(
   '/rename/:id',
   [auth, member, [check('title', 'Title is required').not().isEmpty()]],

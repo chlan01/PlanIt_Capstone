@@ -8,7 +8,9 @@ require('dotenv').config();
 
 const User = require('../../models/User');
 
-// Get authorized user
+// @route    GET api/auth
+// @desc     Get user by token
+// @access   Private
 router.get('/', auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select('-password');
@@ -19,7 +21,9 @@ router.get('/', auth, async (req, res) => {
   }
 });
 
-// Authenticate user & get token
+// @route    POST api/auth
+// @desc     Authenticate user & get token
+// @access   Public
 router.post(
   '/',
   [
@@ -43,7 +47,7 @@ router.post(
         });
       }
 
-      // Check for email and password match
+      // check whether email and password matches
       const isMatch = await bcrypt.compare(password, user.password);
       if (!isMatch) {
         return res.status(400).json({
