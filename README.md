@@ -1,3 +1,3 @@
 # PlanIt
 
-I am supposed to write something. 
+I am supposed to write something.
