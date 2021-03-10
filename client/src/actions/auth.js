@@ -19,7 +19,7 @@ export const loadUser = () => async (dispatch) => {
 
   try {
     const res = await axios.get('/api/auth');
-
+    // send the user(payload) to this action type in the reducer
     dispatch({
       type: USER_LOADED,
       payload: res.data,
@@ -71,13 +71,16 @@ export const login = (email, password) => async (dispatch) => {
     },
   };
 
+  // preparing the data to send
   const body = JSON.stringify({ email, password });
 
   try {
+    // the post will get the endpoint, body, config, and then that will get the response
     const res = await axios.post('/api/auth', body, config);
 
     dispatch({
       type: LOGIN_SUCCESS,
+      // the payload is the data we get back --> we get a token back on a sucessful reg.
       payload: res.data,
     });
 
@@ -86,6 +89,7 @@ export const login = (email, password) => async (dispatch) => {
     const errors = err.response.data.errors;
 
     if (errors) {
+      // pass error message and type (error)
       errors.forEach((error) => dispatch(setAlert(error.msg, 'error')));
     }
 
@@ -95,7 +99,7 @@ export const login = (email, password) => async (dispatch) => {
   }
 };
 
-// Logout
+// Logout / Clear Profile
 export const logout = () => async (dispatch) => {
   dispatch({ type: LOGOUT });
 };
