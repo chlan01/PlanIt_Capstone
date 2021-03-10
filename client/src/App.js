@@ -7,7 +7,7 @@ import Dashboard from './components/pages/Dashboard';
 import Board from './components/pages/Board';
 import Alert from './components/other/Alert';
 
-// Redux
+//  React  Redux
 import { Provider } from 'react-redux';
 import store from './store';
 import { loadUser } from './actions/auth';
@@ -23,6 +23,9 @@ const App = () => {
   useEffect(() => {
     store.dispatch(loadUser());
   }, []);
+
+// the empty array makes it run once (react hooks effect) - mount and unmount  ~ react hooks documentation
+// by doing that it basically makes it 'component did mount' 
 
   return (
     <Provider store={store}>

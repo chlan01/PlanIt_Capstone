@@ -9,6 +9,7 @@ import {
 } from '../actions/types';
 
 const initialState = {
+  // the token will be fetched  from local storage
   token: localStorage.getItem('token'),
   isAuthenticated: null,
   loading: true,
@@ -28,6 +29,7 @@ export default function (state = initialState, action) {
       };
     case REGISTER_SUCCESS:
     case LOGIN_SUCCESS:
+      // if REGISTER_SUCESSS, set the token
       localStorage.setItem('token', payload.token);
       return {
         ...state,
@@ -35,6 +37,7 @@ export default function (state = initialState, action) {
         isAuthenticated: true,
         loading: false,
       };
+      // clear everything out (token from local storage, isAuthenticated, etc)
     case REGISTER_FAIL:
     case AUTH_ERROR:
     case LOGIN_FAIL:
@@ -44,9 +47,12 @@ export default function (state = initialState, action) {
         ...state,
         token: null,
         isAuthenticated: false,
+        // even though the registration failed, it still performed loading
         loading: false,
       };
     default:
       return state;
   }
 }
+
+export default authReducer;
