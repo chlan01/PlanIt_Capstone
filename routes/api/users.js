@@ -9,9 +9,7 @@ require('dotenv').config();
 
 const User = require('../../models/User');
 
-// @route    POST api/users
-// @desc     Register user
-// @access   Public
+// Register user
 router.post(
   '/',
   [
@@ -66,7 +64,7 @@ router.post(
   }
 );
 
-// Get users with email regular expression
+// Get users with email regex
 router.get('/:input', auth, async (req, res) => {
   try {
     const regex = new RegExp(req.params.input, 'i');
