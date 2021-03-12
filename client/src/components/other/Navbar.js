@@ -13,8 +13,11 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      <Link to='/dashboard'>Home</Link>
-      <Link to='/dashboard'>PlanIt</Link>
+      <Link to='/dashboard'>Boards</Link>
+      <Link to='/'>Posts</Link>
+      <Link to='/'>PM</Link>
+      <Link to='/'>PF</Link>
+      <Link to='/'>PP</Link>
       <Link to='/' onClick={() => dispatch(logout())}>
         Logout
       </Link>

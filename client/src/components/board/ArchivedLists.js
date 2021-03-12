@@ -22,8 +22,8 @@ const ArchivedLists = () => {
           .filter((list) => list.archived)
           .map((list, index) => (
             <ListItem key={index}>
-              <ListItemText primary={list.title} />
-              <Button onClick={() => onSubmit(list._id)}>Send to Board</Button>
+              <ListItemText primary= {list.title} />
+              <Button onClick={() => onSubmit(list._id)}>Restore to board</Button>
             </ListItem>
           ))}
       </List>
