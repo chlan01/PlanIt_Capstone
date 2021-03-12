@@ -11,6 +11,9 @@ build/Release
 # Dependency directories
 node_modules/
 
+# Config github
+config/default.json
+
 # Optional npm cache directory
 .npm
 
