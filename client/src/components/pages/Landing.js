@@ -17,7 +17,10 @@ const Landing = () => {
   return (
     <section className='landing'>
       <nav className='top'>
-        <h2> PlanIt</h2>
+        <h2> 
+        <img src="../img/logo.png"/>
+          PlanIt
+          </h2>
         <div>
           <Button color='inherit' href='/login'>
             Login
