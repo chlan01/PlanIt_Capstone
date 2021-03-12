@@ -38,7 +38,7 @@ body {
   height: 100vh;
   color: white;
   text-align: center;
-  background: linear-gradient(135deg, #0079bf, #5067c5);
+  background: linear-gradient(140deg, #5f1391, #50bac2);
 }
 
 .landing .top {
@@ -373,7 +373,14 @@ body {
   margin: auto;
 }
 
-.board .lists .list-wrapper .list .cards .card .checklist-indicator .checklist-indicator-icon {
+.board
+  .lists
+  .list-wrapper
+  .list
+  .cards
+  .card
+  .checklist-indicator
+  .checklist-indicator-icon {
   margin-right: 2px;
 }
 
@@ -395,19 +402,42 @@ body {
   display: flex;
 }
 
-.board .lists .list-wrapper .list .cards .card .card-bottom .card-member-avatars {
+.board
+  .lists
+  .list-wrapper
+  .list
+  .cards
+  .card
+  .card-bottom
+  .card-member-avatars {
   display: flex;
   flex-wrap: wrap;
 }
 
-.board .lists .list-wrapper .list .cards .card .card-bottom .card-member-avatars .avatar {
+.board
+  .lists
+  .list-wrapper
+  .list
+  .cards
+  .card
+  .card-bottom
+  .card-member-avatars
+  .avatar {
   width: 30px;
   height: 30px;
   font-size: 0.8rem;
   background-color: #ddd;
 }
 
-.board .lists .list-wrapper .list .cards .card .card-bottom .card-member-avatars .avatar:hover {
+.board
+  .lists
+  .list-wrapper
+  .list
+  .cards
+  .card
+  .card-bottom
+  .card-member-avatars
+  .avatar:hover {
   background-color: #ccc;
 }
 
