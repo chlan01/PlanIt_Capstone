@@ -26,8 +26,8 @@ body {
 .img_pico {
   height: auto;
   width: auto;
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 30px;
+  max-height: 30px;
 }
 
 .navbar {
@@ -96,6 +96,7 @@ body {
 }
 
 .dashboard-and-navbar .navbar {
+  /*background-color: #026aa7;*/
   background-color: #026aa7;
 }
 
@@ -138,7 +139,7 @@ body {
   font-weight: 500;
   color: white;
   border-radius: 10px;
-  background-color: #5067c5;
+  background-color: #1f3074;
 }
 
 .dashboard .board-card:hover {
