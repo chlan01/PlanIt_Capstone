@@ -16,6 +16,20 @@ body {
   color: #eee;
 }
 
+.img {
+  height: auto;
+  width: auto;
+  max-width: 450px;
+  max-height: 450px;
+}
+
+.img_pico {
+  height: auto;
+  width: auto;
+  max-width: 50px;
+  max-height: 50px;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;

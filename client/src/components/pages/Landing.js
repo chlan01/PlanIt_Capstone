@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Button } from '@material-ui/core';
 import { Redirect } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import planit from "../../img/planit.png";
 
 const Landing = () => {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
@@ -17,10 +18,7 @@ const Landing = () => {
   return (
     <section className='landing'>
       <nav className='top'>
-        <h2> 
-        <img src="../img/logo.png"/>
-          PlanIt
-          </h2>
+        <h2>PlanIt</h2>
         <div>
           <Button color='inherit' href='/login'>
             Login
@@ -31,7 +29,7 @@ const Landing = () => {
         </div>
       </nav>
       <div className='landing-inner'>
-        <h1>PlanIt</h1>
+        <img img alt="planit" className="img" src={planit}/>
         <p>
         It’s more than work. It’s a way of working together.
         </p>
