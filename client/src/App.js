@@ -7,6 +7,8 @@ import Dashboard from './components/pages/Dashboard';
 import Board from './components/pages/Board';
 import Alert from './components/other/Alert';
 
+
+import { LOGOUT } from './actions/types';
 //  React  Redux
 import { Provider } from 'react-redux';
 import store from './store';
@@ -21,7 +23,16 @@ if (localStorage.token) {
 
 const App = () => {
   useEffect(() => {
+    // check for token in local storage
+    if (localStorage.token) {
+      setAuthToken(localStorage.token);
+    }
     store.dispatch(loadUser());
+
+    // log user out from all tabs if they log out in one tab
+    window.addEventListener('storage', () => {
+      if (!localStorage.token) store.dispatch({ type: LOGOUT });
+    });
   }, []);
 
 // the empty array makes it run once (react hooks effect) - mount and unmount  ~ react hooks documentation
