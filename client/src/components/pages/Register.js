@@ -126,6 +126,11 @@ const Register = () => {
           >
             Sign Up
           </Button>
+          <div> 
+          <Link href='/' variant='body2'>
+                Back
+              </Link>
+          </div>
           <Grid container justify='flex-end'>
             <Grid item>
               <Link href='/login' variant='body2'>
