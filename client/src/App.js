@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Landing from './components/pages/Landing';
+import Routes from './components/routing/Routes';
 import Register from './components/pages/Register';
 import Login from './components/pages/Login';
 import Dashboard from './components/pages/Dashboard';
@@ -44,11 +45,8 @@ const App = () => {
         <Fragment>
           <Alert />
           <Switch>
-            <Route exact path='/' component={Landing} />
-            <Route exact path='/register' component={Register} />
-            <Route exact path='/login' component={Login} />
-            <Route exact path='/dashboard' component={Dashboard} />
-            <Route exact path='/board/:id' component={Board} />
+            <Route exact path="/" component={Landing} />
+            <Route component={Routes} />
           </Switch>
         </Fragment>
       </Router>
