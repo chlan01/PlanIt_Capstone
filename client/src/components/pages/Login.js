@@ -88,12 +88,13 @@ const Login = () => {
           >
             Sign In
           </Button>
-          <div> 
-          <Link href='/' variant='body2'>
+          
+          <Grid container justify='flex-end'>
+          <Grid item xs>
+              <Link href="/" variant="body2">
                 Back
               </Link>
-          </div>
-          <Grid container justify='flex-end'>
+            </Grid>
             <Grid item>
               <Link href='/register' variant='body2'>
                 Don't have an account? Sign Up
