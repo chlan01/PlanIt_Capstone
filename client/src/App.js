@@ -2,6 +2,7 @@ import React, { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Landing from './components/pages/Landing';
 import Routes from './components/routing/Routes';
+import PrivateRoute from './components/routing/PrivateRoute';
 import Register from './components/pages/Register';
 import Login from './components/pages/Login';
 import Dashboard from './components/pages/Dashboard';

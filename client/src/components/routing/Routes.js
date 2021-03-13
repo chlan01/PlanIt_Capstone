@@ -12,6 +12,7 @@ import Dashboard from '../pages/Dashboard';
 import Board from '../pages/Board';
 import Profileboard from '../profileboard/Profileboard';
 
+// Routes are protected and it always checks if the user is authenticated in order to navigate -- (see ../routing/PrivateRoute.js)
 
 const Routes = props => {
     return (
