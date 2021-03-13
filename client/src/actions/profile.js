@@ -12,7 +12,7 @@ import {
   NO_REPOS
 } from './types';
 
-// Get current users profile
+// Get current user profile
 export const getCurrentProfile = () => async (dispatch) => {
   try {
     const res = await api.get('/profile/me');
