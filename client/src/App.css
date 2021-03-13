@@ -53,6 +53,7 @@ body {
   color: white;
   text-align: center;
   background: linear-gradient(140deg, #5f1391, #50bac2);
+  /* background: linear-gradient(140deg, #5f13916c, #50bac286); */
 }
 
 .landing .top {
@@ -96,8 +97,7 @@ body {
 }
 
 .dashboard-and-navbar .navbar {
-  /*background-color: #026aa7;*/
-  background-color: #026aa7;
+  background-color: #5085c2;
 }
 
 .dashboard {
@@ -139,7 +139,7 @@ body {
   font-weight: 500;
   color: white;
   border-radius: 10px;
-  background-color: #026aa7;
+  background-color: #5085c2;
 }
 
 .dashboard .board-card:hover {
@@ -160,8 +160,10 @@ body {
 }
 
 .board-and-navbar {
-  background-size: cover;
-  height: 100vh;
+  /* background-size: cover;
+  height: 100vh; */
+  background: linear-gradient(140deg, #5f13919a, #50bac29c);
+  /* background: linear-gradient(170deg, #cdc4d3, #62c3cabb); */
 }
 
 .board-and-navbar .navbar {

@@ -56,14 +56,14 @@ const Board = ({ match }) => {
   ) : (
     <div
       className='board-and-navbar'
-      style={{
-        backgroundImage:
-          'url(' +
-          (board.backgroundURL
-            ? board.backgroundURL
-            : 'https://images.unsplash.com/photo-1589025942091-860486da079f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80') +
-          ')',
-      }}
+      // style={{
+      //   backgroundImage:
+      //     'url(' +
+      //     (board.backgroundURL
+      //       ? board.backgroundURL
+      //       : 'https://images.unsplash.com/photo-1565275706395-d452122d6cfc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80') +
+      //     ')',
+      // }}
     >
       <Navbar />
       <section className='board'>
