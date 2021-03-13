@@ -70,12 +70,11 @@ router.post(
         ? skills
         : skills.split(',').map((skill) => ' ' + skill.trim()),
       ...rest
+      // Turn into array (comma delimiter) then map through array for each skill and trim
+     // it doesn't matter if its just a comma or comma + space
     };
 
-    // // Build profile object
     // const profileFields = {};
-    // // get user from request.user.id
-    // // it will already know that just by the token it was sent
     // profileFields.user = req.user.id;
 
     // if(company) profileFields.company = company; 
@@ -85,8 +84,6 @@ router.post(
     // if(status) profileFields.status = status;
     // if(githubusername) profileFields.githubusername = githubusername;
     // if(skills) {
-    //   //Turn into array (comma delimiter) then map through array for each skill and trim
-    //   //Now it doesn't matter if its just a comma or comma + space
     //   profileFields.skills = skills.split(',').map(skill => skill.trim());
     // }
 
