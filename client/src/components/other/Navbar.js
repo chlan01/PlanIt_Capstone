@@ -16,7 +16,7 @@ const Navbar = () => {
       <Link to='/dashboard'>Boards</Link>
       <Link to='/'>Posts</Link>
       <Link to='/'>PM</Link>
-      <Link to='/'>PF</Link>
+      <Link to='/profileboard'>PF</Link>
       <Link to='/'>PP</Link>
       <Link to='/' onClick={() => dispatch(logout())}>
         Logout
