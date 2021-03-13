@@ -8,6 +8,7 @@ import Experience from './Experience';
 import Education from './Education';
 
 
+
 const Profileboard = ({
     getCurrentProfile,
     deleteAccount,
@@ -19,6 +20,7 @@ const Profileboard = ({
     }, [getCurrentProfile]);
   
     return (
+      
       <Fragment>
         <h1 className="large text-primary">Profileboard</h1>
         <p className="lead">
