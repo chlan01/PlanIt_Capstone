@@ -6,6 +6,7 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT,
+  NO_TOKEN
 } from '../actions/types';
 
 const initialState = {
@@ -37,6 +38,7 @@ export default function (state = initialState, action) {
         isAuthenticated: true,
         loading: false,
       };
+
       // clear everything out (token from local storage, isAuthenticated, etc)
     case REGISTER_FAIL:
     case AUTH_ERROR:
