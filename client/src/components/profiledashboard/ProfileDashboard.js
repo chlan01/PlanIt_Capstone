@@ -1,7 +1,8 @@
 import React, { Fragment, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import Spinner from '../other/Spinner';
+import { getCurrentProfile } from '../../actions/profile';
 
 const ProfileDashboard = ({ getCurrentProfile, auth, profile }) => {
     useEffect(() => {
