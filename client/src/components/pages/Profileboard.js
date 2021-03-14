@@ -7,6 +7,8 @@ import ProfileboardActions from '../profileboard/ProfileboardActions';
 import Experience from '../profileboard/Experience';
 import Education from '../profileboard/Education';
 
+import '../other/test.css';
+
 
 const Profileboard = ({
     getCurrentProfile,

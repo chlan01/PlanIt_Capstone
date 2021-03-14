@@ -20,7 +20,7 @@ const Routes = props => {
           <Route exact path="/login" component={Login} />
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
           <PrivateRoute exact path="/board/:id" component={Board} />
-          <PrivateRoute exact path="/profileboard" component={Profileboard} />
+          <PrivateRoute exact path="/pfboard" component={Profileboard} />
           <Route component={NotFound} />
         </Switch>
       </section>

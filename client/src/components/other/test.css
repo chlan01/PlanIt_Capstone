@@ -10,13 +10,12 @@ Global Styles :root {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
-
 body {
-  font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #eee;
   color: #333;
 }
 
@@ -34,7 +33,7 @@ img {
 }
 
 /* Utilities */
-.container {
+.containerB {
   max-width: 1100px;
   margin: auto;
   overflow: hidden;
@@ -457,25 +456,6 @@ button {
 
   .lead {
     font-size: 1rem;
-  }
-
-  /* Navbar */
-  .navbar {
-    display: block;
-    text-align: center;
-  }
-
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .navbar h1 {
-    margin-bottom: 1rem;
-  }
-
-  .navbar .welcome {
-    display: none;
   }
 
   /* Profiles Page */

@@ -3,7 +3,6 @@ import alert from './alert';
 import auth from './auth';
 import board from './board';
 import profile from './profile';
-import post from './post';
 
 export default combineReducers 
 ({ 
@@ -11,5 +10,4 @@ export default combineReducers
     auth, 
     board,
     profile,
-    post
 });
