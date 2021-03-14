@@ -15,9 +15,10 @@ const Navbar = () => {
     <nav className='navbar'>
       <Link to='/dashboard'>Boards</Link>
       <Link to='/'>Posts</Link>
-      <Link to='/'>Pom</Link>
-      <Link to='/'>PF</Link>
+      <Link to='/'>Timer</Link>
+      <Link to='/profiledashboard'>ProfDash</Link>
       <Link to='/'>PP</Link>
+      <Link to='/'>WB</Link>
       <Link to='/' onClick={() => dispatch(logout())}>
         Logout
       </Link>
