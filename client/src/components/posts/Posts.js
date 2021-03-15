@@ -9,7 +9,7 @@ const Posts = ({ getPosts, post: { posts } }) => {
   useEffect(() => {
     getPosts();
   }, [getPosts]);
-
+  
   return (
     <Fragment>
       <h1 className="large text-primary">Posts</h1>
