@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <Link to='/dashboard'>Boards</Link>
-      <Link to='/'>Posts</Link>
+      <Link to='/posts'>Posts</Link>
       <Link to='/'>Pom</Link>
       <Link to='/'>PP</Link>
       <Link to='/'>WB</Link>
