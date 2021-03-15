@@ -7,7 +7,8 @@ import Register from '../pages/Register';
 import Login from '../pages/Login';
 import Dashboard from '../pages/Dashboard';
 import Board from '../pages/Board';
-import ProfileDashboard from '../profiledashboard/ProfileDashboard';
+import Posts from '../posts/Posts';
+import Post from '../post/Post';
 
 // Routes are protected and it always checks if the user is authenticated in order to navigate -- (see ../routing/PrivateRoute.js)
 
@@ -19,8 +20,9 @@ const Routes = props => {
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
-          <PrivateRoute exact path="/profiledashboard" component={ProfileDashboard} />
           <PrivateRoute exact path="/board/:id" component={Board} />
+          <PrivateRoute exact path="/posts" component={Posts} />
+          <PrivateRoute exact path="/posts/:id" component={Post} />
           <Route component={NotFound} />
         </Switch>
       </section>
