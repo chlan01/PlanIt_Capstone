@@ -4,7 +4,6 @@ import { Redirect } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import planit from "../../img/planit.png";
 import { connect } from 'react-redux';
-
 import PropTypes from 'prop-types';
 
 const Landing = () => {
