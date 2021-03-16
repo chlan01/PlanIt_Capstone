@@ -16,9 +16,6 @@ const Navbar = () => {
       <Link to='/dashboard'>Boards</Link>
       <Link to='/'>Posts</Link>
       <Link to='/'>Timer</Link>
-      <Link to='/'>ProfDash</Link>
-      <Link to='/'>PP</Link>
-      <Link to='/'>WB</Link>
       <Link to='/' onClick={() => dispatch(logout())}>
         Logout
       </Link>
