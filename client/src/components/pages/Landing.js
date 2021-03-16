@@ -22,7 +22,10 @@ const Landing = () => {
     <section className='landing'>
       <nav className='top'>
         <h2>
-        <img src="https://img.icons8.com/nolan/30/trello.png"/>PlanIt</h2>
+        <span><i class="fas fa-clipboard-list"></i></span>
+        
+        <span> PlanIt</span>
+        </h2>
         <div>
           <Button color='inherit' href='/login'>
             Login
