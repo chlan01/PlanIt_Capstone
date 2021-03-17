@@ -1,7 +1,7 @@
 {
   "name": "planit",
   "version": "1.0.0",
-  "description": "Making the world a better place (lol jk).",
+  "description": "PlanIt, a project management tool.",
   "main": "server.js",
   "scripts": {
     "start": "node server",
