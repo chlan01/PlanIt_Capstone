@@ -1,13 +1,15 @@
-import axios from 'axios';
+import api from './api';
 
 
 //takes a token and if the token is there then add it to headers - if  not delete it from header
 
-const setAuthToken = (token) => {
+const setAuthToken = token => {
   if (token) {
-    axios.defaults.headers.common['x-auth-token'] = token;
+    api.defaults.headers.common['x-auth-token'] = token;
+    localStorage.setItem('token', token);
   } else {
-    delete axios.defaults.headers.common['x-auth-token'];
+    delete api.defaults.headers.common['x-auth-token'];
+    localStorage.removeItem('token');
   }
 };
 

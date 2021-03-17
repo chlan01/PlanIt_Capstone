@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from '../../utils/api';
 import { useSelector, useDispatch } from 'react-redux';
 import { addMember } from '../../actions/board';
 import getInitials from '../../utils/getInitials';
@@ -23,7 +23,7 @@ const Members = () => {
   const handleInputValue = async (newInputValue) => {
     setInputValue(newInputValue);
     if (newInputValue && newInputValue !== '') {
-      const search = (await axios.get(`/api/users/${newInputValue}`)).data.slice(0, 5);
+      const search = (await api.get(`/users/${newInputValue}`)).data.slice(0, 5);
       setUsers(search && search.length > 0 ? search : []);
     }
   };
