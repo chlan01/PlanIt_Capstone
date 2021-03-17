@@ -9,12 +9,12 @@ const Posts = ({ getPosts, post: { posts } }) => {
   useEffect(() => {
     getPosts();
   }, [getPosts]);
-  
+
   return (
     <Fragment>
       <h1 className="large text-primary">Posts</h1>
       <p className="lead">
-        <i className="fas fa-user" /> Hi
+        <i className="fas fa-user" /> Welcome to the community
       </p>
       <PostForm />
       <div className="posts">

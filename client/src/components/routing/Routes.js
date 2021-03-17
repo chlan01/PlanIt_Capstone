@@ -3,14 +3,20 @@ import { Route, Switch } from 'react-router-dom';
 import Alert from '../other/Alert';
 import NotFound from '../other/NotFound';
 import PrivateRoute from '../routing/PrivateRoute';
-import Register from '../pages/Register';
-import Login from '../pages/Login';
-import Dashboard from '../pages/Dashboard';
-import Board from '../pages/Board';
+import Register from '../layout/Register';
+import Login from '../layout/Login';
+import Dashboard from '../layout/Dashboard';
+import Board from '../layout/Board';
 import Posts from '../posts/Posts';
 import Post from '../post/Post';
+import ProfileDashboards from '../dashboard/ProfileDashboard';
+import ProfileForm from '../profile-forms/ProfileForm';
+import AddExperience from '../profile-forms/AddExperience';
+import AddEducation from '../profile-forms/AddEducation';
+import Profiles from '../profiles/Profiles';
+import Profile from '../profile/Profile';
 
-// Routes are protected and it always checks if the user is authenticated in order to navigate -- (see ../routing/PrivateRoute.js)
+// Routes are protected and it always checks if the user is authenticated in order to navigate -- (see ./routing/PrivateRoute.js)
 
 const Routes = props => {
     return (
@@ -23,6 +29,13 @@ const Routes = props => {
           <PrivateRoute exact path="/board/:id" component={Board} />
           <PrivateRoute exact path="/posts" component={Posts} />
           <PrivateRoute exact path="/posts/:id" component={Post} />
+          <PrivateRoute exact path="/profiles" component={ProfileDashboards} />
+          <PrivateRoute exact path="/create-profile" component={ProfileForm} />
+          <PrivateRoute exact path="/edit-profile" component={ProfileForm} />
+          <PrivateRoute exact path="/add-experience" component={AddExperience} />
+          <PrivateRoute exact path="/add-education" component={AddEducation} />
+          <PrivateRoute exact path="/profiles" component={Profiles} />
+          <PrivateRoute exact path="/profile/:id" component={Profile} />
           <Route component={NotFound} />
         </Switch>
       </section>
