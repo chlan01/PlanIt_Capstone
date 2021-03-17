@@ -9,7 +9,7 @@ import Dashboard from '../layout/Dashboard';
 import Board from '../layout/Board';
 import Posts from '../posts/Posts';
 import Post from '../post/Post';
-import ProfileDashboards from '../dashboard/ProfileDashboard';
+import Dashboards from '../dashboard/Dashboards';
 import ProfileForm from '../profile-forms/ProfileForm';
 import AddExperience from '../profile-forms/AddExperience';
 import AddEducation from '../profile-forms/AddEducation';
@@ -29,7 +29,7 @@ const Routes = props => {
           <PrivateRoute exact path="/board/:id" component={Board} />
           <PrivateRoute exact path="/posts" component={Posts} />
           <PrivateRoute exact path="/posts/:id" component={Post} />
-          <PrivateRoute exact path="/profiles" component={ProfileDashboards} />
+          <PrivateRoute exact path="/profiles" component={Dashboards} />
           <PrivateRoute exact path="/create-profile" component={ProfileForm} />
           <PrivateRoute exact path="/edit-profile" component={ProfileForm} />
           <PrivateRoute exact path="/add-experience" component={AddExperience} />
