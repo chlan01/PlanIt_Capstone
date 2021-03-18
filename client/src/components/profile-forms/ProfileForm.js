@@ -70,6 +70,7 @@ const ProfileForm = ({
 
   return (
     <Fragment>
+      <div className="containerB"> 
       <h1 className="large text-primary">Edit Your Profile</h1>
       <p className="lead">
         <i className="fas fa-user" /> Add some changes to your profile
@@ -79,41 +80,40 @@ const ProfileForm = ({
         <div className="form-group">
           <select name="status" value={status} onChange={onChange}>
             <option>* Select Professional Status</option>
-            <option value="Developer">Developer</option>
+            <option value="Intern">Intern</option>
             <option value="Junior Developer">Junior Developer</option>
+            <option value="Developer">Mid-Level Developer</option>
             <option value="Senior Developer">Senior Developer</option>
             <option value="Manager">Manager</option>
-            <option value="Student or Learning">Student or Learning</option>
-            <option value="Instructor">Instructor or Teacher</option>
-            <option value="Intern">Intern</option>
+            
             <option value="Other">Other</option>
           </select>
           <small className="form-text">
-            Give us an idea of where you are at in your career
+            Your current position status
           </small>
         </div>
         <div className="form-group">
           <input
             type="text"
-            placeholder="Company"
+            placeholder="Previous Companies"
             name="company"
             value={company}
             onChange={onChange}
           />
           <small className="form-text">
-            Could be your own company or one you work for
+            Previous companies you worked for
           </small>
         </div>
         <div className="form-group">
           <input
             type="text"
-            placeholder="Website"
+            placeholder="Personal Website"
             name="website"
             value={website}
             onChange={onChange}
           />
           <small className="form-text">
-            Could be your own or a company website
+            If you have any
           </small>
         </div>
         <div className="form-group">
@@ -125,7 +125,7 @@ const ProfileForm = ({
             onChange={onChange}
           />
           <small className="form-text">
-            City & state suggested (eg. Boston, MA)
+            (eg. Athens, GR)
           </small>
         </div>
         <div className="form-group">
@@ -137,7 +137,7 @@ const ProfileForm = ({
             onChange={onChange}
           />
           <small className="form-text">
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
+            Use comma separated values (eg. HTML, CSS, JavaScript)
           </small>
         </div>
         <div className="form-group">
@@ -149,18 +149,17 @@ const ProfileForm = ({
             onChange={onChange}
           />
           <small className="form-text">
-            If you want your latest repos and a Github link, include your
-            username
+             Include GitHub username to view your latest repos
           </small>
         </div>
         <div className="form-group">
           <textarea
-            placeholder="A short bio of yourself"
+            placeholder="A Short Bio"
             name="bio"
             value={bio}
             onChange={onChange}
           />
-          <small className="form-text">Tell us a little about yourself</small>
+          <small className="form-text">Tell us a something about yourself</small>
         </div>
 
         <div className="my-2">
@@ -169,9 +168,9 @@ const ProfileForm = ({
             type="button"
             className="btn btn-light"
           >
-            Add Social Network Links
+            Add Social Media Links
           </button>
-          <span>Optional</span>
+          <small className="form-text">Optional</small>
         </div>
 
         {displaySocialInputs && (
@@ -238,6 +237,7 @@ const ProfileForm = ({
           Go Back
         </Link>
       </form>
+      </div>
     </Fragment>
   );
 };
