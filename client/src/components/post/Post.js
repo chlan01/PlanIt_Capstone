@@ -7,6 +7,7 @@ import PostItem from '../posts/PostItem';
 import CommentForm from '../post/CommentForm';
 import CommentItem from '../post/CommentItem';
 import { getPost } from '../../actions/post';
+import Navbar from '../other/Navbar';
 
 
 
@@ -20,6 +21,8 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
     <Spinner />
   ) : (
     <Fragment>
+      <div className='dashboard-and-navbar'>
+      <Navbar />
       <div className="containerB"> 
         <Link to="/posts" className="btn btn-dark my-1">
           Back To Posts
@@ -31,6 +34,7 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
             <CommentItem key={comment._id} comment={comment} postId={post._id} />
           ))}
         </div>
+      </div>
       </div>
     </Fragment>
   );

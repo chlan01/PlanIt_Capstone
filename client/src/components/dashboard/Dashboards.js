@@ -32,11 +32,17 @@ const Dashboards = ({
           <DashboardActions />
           <Experience experience={profile.experience} />
           <Education education={profile.education} />
-
+          <div>
+          <div className='bg-primary d'>
+            <h2>Danger Zone</h2>
+            <h2>Danger Zone</h2>
+            <h2>Danger Zone</h2>
+          </div>
           <div className="my-2">
             <button className="btn btn-danger" onClick={() => deleteAccount()}>
               <i className="fas fa-user-minus" /> Delete My Account
             </button>
+          </div>
           </div>
         </Fragment>
       ) : (

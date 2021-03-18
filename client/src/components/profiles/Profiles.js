@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Spinner from '../other/Spinner';
 import ProfileItem from './ProfileItem';
+import Navbar from '../other/Navbar';
 import { getProfiles } from '../../actions/profile';
 
 const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
@@ -16,6 +17,8 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
         <Spinner />
       ) : (
         <Fragment>
+          <div className='dashboard-and-navbar'>
+            <Navbar />
           <h1 className='large text-primary'>Members</h1>
           <p className='lead'>
             <i className='fab fa-connectdevelop' /> Browse members
@@ -28,6 +31,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
             ) : (
               <h4>No profiles found...</h4>
             )}
+          </div>
           </div>
         </Fragment>
       )}
