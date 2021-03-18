@@ -1,15 +1,14 @@
 import {
     REGISTER_SUCCESS,
-    //REGISTER_FAIL,
     USER_LOADED,
     AUTH_ERROR,
     LOGIN_SUCCESS,
-    //LOGIN_FAIL,
     LOGOUT,
     ACCOUNT_DELETED
   } from '../actions/types';
   
   const initialState = {
+    // the token will be fetched  from local storage
     token: localStorage.getItem('token'),
     isAuthenticated: null,
     loading: true,
@@ -28,6 +27,7 @@ import {
           user: payload
         };
       case REGISTER_SUCCESS:
+        // if REGISTER_SUCESSS, set the token
       case LOGIN_SUCCESS:
         return {
           ...state,
@@ -43,12 +43,14 @@ import {
           loading: false,
           user: null
         };
+        // clear everything out (token from local storage, isAuthenticated, etc)
       case AUTH_ERROR:
       case LOGOUT:
         return {
           ...state,
           token: null,
           isAuthenticated: false,
+           // even though the registration failed, it still performed loading
           loading: false,
           user: null
         };
