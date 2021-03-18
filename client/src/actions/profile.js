@@ -12,7 +12,7 @@ import {
   NO_REPOS
 } from './types';
 
-// Get current user profile
+// Get current users profile
 export const getCurrentProfile = () => async (dispatch) => {
   try {
     const res = await api.get('/profile/me');
@@ -96,7 +96,7 @@ export const createProfile = (formData, history, edit = false) => async (
     dispatch(setAlert(edit ? 'Profile Updated' : 'Profile Created', 'success'));
 
     if (!edit) {
-      history.push('/profileboard');
+      history.push('/dashboard');
     }
   } catch (err) {
     const errors = err.response.data.errors;
@@ -124,7 +124,7 @@ export const addExperience = (formData, history) => async (dispatch) => {
 
     dispatch(setAlert('Experience Added', 'success'));
 
-    history.push('/profileboard');
+    history.push('/dashboard');
   } catch (err) {
     const errors = err.response.data.errors;
 
@@ -151,7 +151,7 @@ export const addEducation = (formData, history) => async (dispatch) => {
 
     dispatch(setAlert('Education Added', 'success'));
 
-    history.push('/profileboard');
+    history.push('/dashboard');
   } catch (err) {
     const errors = err.response.data.errors;
 
