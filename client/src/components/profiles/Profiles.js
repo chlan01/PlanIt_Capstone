@@ -13,12 +13,12 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
 
   return (
     <Fragment>
+      <div className='dashboard-and-navbar'>
+      <Navbar />
       {loading ? (
         <Spinner />
       ) : (
         <Fragment>
-          <div className='dashboard-and-navbar'>
-            <Navbar />
           <h1 className='large text-primary'>Members</h1>
           <p className='lead'>
             <i className='fab fa-connectdevelop' /> Browse members
@@ -32,9 +32,9 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
               <h4>No profiles found...</h4>
             )}
           </div>
-          </div>
         </Fragment>
       )}
+      </div>
     </Fragment>
   );
 };
