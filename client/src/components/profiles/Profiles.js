@@ -15,6 +15,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
     <Fragment>
       <div className='dashboard-and-navbar'>
       <Navbar />
+      <div className="containerB"> 
       {loading ? (
         <Spinner />
       ) : (
@@ -34,6 +35,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
           </div>
         </Fragment>
       )}
+      </div>
       </div>
     </Fragment>
   );
