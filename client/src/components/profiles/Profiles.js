@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Spinner from '../other/Spinner';
 import ProfileItem from './ProfileItem';
+import Navbar from '../other/Navbar';
 import { getProfiles } from '../../actions/profile';
 
 const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
@@ -12,14 +13,16 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
 
   return (
     <Fragment>
+      <div className='dashboard-and-navbar'>
+      <Navbar />
+      <div className="containerB"> 
       {loading ? (
         <Spinner />
       ) : (
         <Fragment>
-          <h1 className='large text-primary'>Developers</h1>
+          <h1 className='large text-primary'>Members</h1>
           <p className='lead'>
-            <i className='fab fa-connectdevelop' /> Browse and connect with
-            developers
+            <i className='fas fa-search' /> Browse members
           </p>
           <div className='profiles'>
             {profiles.length > 0 ? (
@@ -32,6 +35,8 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
           </div>
         </Fragment>
       )}
+      </div>
+      </div>
     </Fragment>
   );
 };

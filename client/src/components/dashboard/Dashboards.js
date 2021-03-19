@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import DashboardActions from './DashboardActions';
 import Experience from './Experience';
 import Education from './Education';
+import Navbar from '../other/Navbar';
 import { getCurrentProfile, deleteAccount } from '../../actions/profile';
 
 const Dashboards = ({
@@ -19,7 +20,10 @@ const Dashboards = ({
 
   return (
     <Fragment>
-      <h1 className="large text-primary">User Dashboard</h1>
+      <div className='dashboard-and-navbar'>
+      <Navbar />
+      <div className="containerB"> 
+      <h1 className="large text-primary">User Profile Dashboard</h1>
       <p className="lead">
         <i className="fas fa-user" /> Welcome {user && user.name}
       </p>
@@ -28,11 +32,17 @@ const Dashboards = ({
           <DashboardActions />
           <Experience experience={profile.experience} />
           <Education education={profile.education} />
-
+          <div>
+          <div className='bg-primary d'>
+            <h2>Danger Zone</h2>
+            <h2>Danger Zone</h2>
+            <h2>Danger Zone</h2>
+          </div>
           <div className="my-2">
             <button className="btn btn-danger" onClick={() => deleteAccount()}>
               <i className="fas fa-user-minus" /> Delete My Account
             </button>
+          </div>
           </div>
         </Fragment>
       ) : (
@@ -43,6 +53,8 @@ const Dashboards = ({
           </Link>
         </Fragment>
       )}
+      </div>
+      </div>
     </Fragment>
   );
 };

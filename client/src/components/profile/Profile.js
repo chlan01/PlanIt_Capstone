@@ -9,6 +9,8 @@ import ProfileExperience from './ProfileExperience';
 import ProfileEducation from './ProfileEducation';
 import ProfileGithub from './ProfileGithub';
 import { getProfileById } from '../../actions/profile';
+import Navbar from '../other/Navbar';
+
 
 const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
   useEffect(() => {
@@ -17,6 +19,9 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
 
   return (
     <Fragment>
+       <div className='dashboard-and-navbar'>
+      <Navbar />
+       <div className="containerB"> 
       {profile === null ? (
         <Spinner />
       ) : (
@@ -46,7 +51,7 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
                   ))}
                 </Fragment>
               ) : (
-                <h4>No experience credentials</h4>
+                <h4>No experience info</h4>
               )}
             </div>
 
@@ -62,7 +67,7 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
                   ))}
                 </Fragment>
               ) : (
-                <h4>No education credentials</h4>
+                <h4>No education info</h4>
               )}
             </div>
 
@@ -72,6 +77,8 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
           </div>
         </Fragment>
       )}
+      </div>
+      </div>
     </Fragment>
   );
 };
