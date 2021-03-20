@@ -5,7 +5,6 @@ const auth = require('../../middleware/auth');
 const jwt = require('jsonwebtoken');
 const { check, validationResult } = require('express-validator');
 require('dotenv').config();
-
 const User = require('../../models/User');
 
 // Get authorized user
