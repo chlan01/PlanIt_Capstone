@@ -65,7 +65,7 @@ const MoveCard = ({ cardId, setOpen, thisList }) => {
 
   return (
     <div className={classes.moveCard}>
-      <h3 className={classes.moveCardTitle}>Move this card</h3>
+      <h3 className={classes.moveCardTitle}>Move this task</h3>
       <div>
         <FormControl className={classes.moveCardSelect}>
           <InputLabel shrink>List</InputLabel>
@@ -107,7 +107,7 @@ const MoveCard = ({ cardId, setOpen, thisList }) => {
         color='primary'
         onClick={onSubmit}
       >
-        Move Card
+        Move Task
       </Button>
     </div>
   );

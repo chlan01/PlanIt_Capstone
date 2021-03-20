@@ -37,7 +37,7 @@ const ArchivedCards = () => {
                     )
                   }
                 >
-                  Delete Card
+                  Delete Task
                 </Button>
                 <Button onClick={() => onSendBack(card._id)}>Restore to List</Button>
               </div>

@@ -43,7 +43,7 @@ const CardModal = ({ cardId, open, setOpen, card, list }) => {
               required
               fullWidth
               multiline
-              label='Card title'
+              label='Task title'
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && onTitleDescriptionSubmit(e)}
@@ -58,7 +58,7 @@ const CardModal = ({ cardId, open, setOpen, card, list }) => {
             margin='normal'
             fullWidth
             multiline
-            label='Card description'
+            label='Task description'
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
@@ -102,7 +102,7 @@ const CardModal = ({ cardId, open, setOpen, card, list }) => {
               className={classes.archiveButton}
               onClick={onArchiveCard}
             >
-              Archive Card
+              Archive Task
             </Button>
             <DeleteCard cardId={cardId} setOpen={setOpen} list={list} />
           </div>

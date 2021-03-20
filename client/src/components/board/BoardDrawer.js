@@ -69,7 +69,7 @@ const BoardDrawer = () => {
                 <ListItemIcon>
                   <ArchiveIcon />
                 </ListItemIcon>
-                <ListItemText primary={'Archived Cards'} />
+                <ListItemText primary={'Archived Tasks'} />
               </ListItem>
             </List>
             <Divider />

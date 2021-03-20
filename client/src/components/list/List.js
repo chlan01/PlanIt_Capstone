@@ -64,7 +64,7 @@ const List = ({ listId, index }) => {
           {!addingCard && (
             <div className='create-card-button'>
               <Button variant='contained' onClick={() => setAddingCard(true)}>
-                + Add a task
+                + Add Task
               </Button>
             </div>
           )}
