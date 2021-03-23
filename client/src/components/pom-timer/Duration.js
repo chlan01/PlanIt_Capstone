@@ -1,5 +1,5 @@
 import React from 'react';
-import './Pom.css';
+// import './Pom.css';
 
 const Duration = props => {
 
@@ -12,7 +12,7 @@ const Duration = props => {
         {props.sessionLabel}
        </h4>
 
-       <div className="row"> {/* new row */}
+       <div className="rowT"> {/* new row */}
          <div className="col d-none d-md-block"></div>
          <div className="col">
            <button

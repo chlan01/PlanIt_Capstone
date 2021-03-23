@@ -960,3 +960,24 @@ button {
     padding: 0.3rem 0.4rem;
   }
 }
+
+.rowT {
+  margin-bottom: 20px;
+}
+
+.Pomt {
+  margin-top: 0.5em;
+  background: rgb(218, 207, 207);
+}
+
+.footerT {
+  padding: 10px 0px;
+  border-top: thin solid #777;
+}
+.footerTT {
+  text-align: left;
+  padding-left: 15px;
+  margin-left: 10px;
+  /* display: inline-block; */
+  max-width: 300px;
+}

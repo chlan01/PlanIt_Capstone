@@ -1,9 +1,11 @@
-import React from 'react';
+
+import React, { Fragment } from 'react';
 import Duration from './Duration';
 import Timer from './Timer';
 import beep1 from '../../sounds/beep1.mp3';
+import Navbar from '../other/Navbar';
 
-import './Pom.css';
+// import './Pom.css';
 
 
 class Pom extends React.Component {
@@ -94,7 +96,7 @@ class Pom extends React.Component {
     if (!this.pomodoroStarted && this.state.time !== 3600) {
       this.setState({ time: this.state.time + 60})
     }
-    console.log('increase session time')
+    // console.log('increase session time')
   }
 
   increaseBreakTime = () => {
@@ -102,14 +104,14 @@ class Pom extends React.Component {
       this.breakTime = this.breakTime + 60;
       this.setState({ breakTime: this.state.breakTime + 60})
     }
-    console.log('increase break time')
+    // console.log('increase break time')
   }
 
   decreaseTime = () => {
     if (this.state.time > 60 && !this.pomodoroStarted) {
       this.setState({ time: this.state.time - 60 })
     }
-    console.log('decrease session time')
+    // console.log('decrease session time')
   }
 
   decreaseBreakTime = () => {
@@ -120,7 +122,7 @@ class Pom extends React.Component {
     if (this.state.breakTime > 60 && !this.pomodoroStarted) {
       this.setState({ breakTime: this.state.breakTime - 60 })
     }
-    console.log('decrease break time')
+    // console.log('decrease break time')
   }
 
   componentDidUpdate() {
@@ -155,8 +157,10 @@ class Pom extends React.Component {
 
   render() {
     return (
-      <div className="Pom container text-center">
-        <h1>Pomodoro Clock</h1>
+        <div className='dashboard-and-navbar'>
+        <Navbar />
+      <div className="Pomt container text-center">
+        <h1>Pomodoro Timer</h1>
 
         <Duration
           sessionLabel="Session Length"
@@ -183,8 +187,25 @@ class Pom extends React.Component {
           condition={this.isPaused ? "Resume" : "Pause"}
           handleReset={this.handleReset}
         />
-
+        {/* <br/>
+          <span>#############</span>
+        <br/> */}
+        
+            
+            <div class="footerTT">
+                <h3> How it works:</h3>
+                <ol>
+                    <li value="1">Decide on the task to be done.</li>
+                    <li>Set the pomodoro timer (traditionally to 25 minutes).</li>
+                    <li>End work when the timer rings and put a checkmark on a piece of paper.</li>
+                    <li>If you have fewer than four checkmarks, take a short break (3–5 minutes) and then return to step 2; otherwise continue to step 6</li>
+                    <li>After four rotations, take a longer break (15–30 minutes), reset your checkmark count to zero, then go to step 1.</li>
+                </ol>
+                
+            </div>
       </div>
+    </div>
+     
     );
   }
 }
