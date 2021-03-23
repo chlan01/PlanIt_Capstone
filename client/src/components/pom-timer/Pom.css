@@ -1,0 +1,28 @@
+.Pom {
+  margin-top: 40px;
+}
+
+h1 {
+  letter-spacing: 3px;
+}
+
+#duration {
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin: 15px;
+  font-weight: normal;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+buttons-column > button {
+  margin: 0 15px;
+  letter-spacing: 2px;
+}

@@ -15,6 +15,7 @@ import AddExperience from '../profile-forms/AddExperience';
 import AddEducation from '../profile-forms/AddEducation';
 import Profiles from '../profiles/Profiles';
 import Profile from '../profile/Profile';
+import Pom from '../pom-timer/Pom';
 
 // Routes are protected and it always checks if the user is authenticated in order to navigate -- (see ./routing/PrivateRoute.js)
 
@@ -36,6 +37,7 @@ const Routes = props => {
           <PrivateRoute exact path="/add-education" component={AddEducation} />
           <PrivateRoute exact path="/profiles" component={Profiles} />
           <PrivateRoute exact path="/profile/:id" component={Profile} />
+          <PrivateRoute exact path="/pomodoro" component={Pom} />
           <Route component={NotFound} />
         </Switch>
       </section>
