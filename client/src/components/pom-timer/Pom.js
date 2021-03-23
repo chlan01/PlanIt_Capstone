@@ -198,7 +198,7 @@ class Pom extends React.Component {
                     <li value="1">Decide on the task to be done.</li>
                     <li>Set the pomodoro timer (traditionally to 25 minutes).</li>
                     <li>End work when the timer rings and put a checkmark on a piece of paper.</li>
-                    <li>If you have fewer than four checkmarks, take a short break (3–5 minutes) and then return to step 2; otherwise continue to step 6</li>
+                    <li>If you have fewer than four checkmarks, take a short break (5 minutes) and then return to step 2; otherwise continue to step 6</li>
                     <li>After four rotations, take a longer break (15–30 minutes), reset your checkmark count to zero, then go to step 1.</li>
                 </ol>
                 

@@ -6,7 +6,7 @@ const Duration = props => {
   const { increaseTime, decreaseTime, increaseBreakTime, decreaseBreakTime } = props;
 
    return (
-     <div id="duration">
+     <div className="durationT" id="duration">
        
        <h4 id="session-label">
         {props.sessionLabel}

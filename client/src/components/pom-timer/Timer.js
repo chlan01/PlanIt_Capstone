@@ -3,7 +3,7 @@ import './Pom.css';
 
 const Timer = props => {
     return(
-         <div id="timer" className="row">
+         <div id="timer" className="rowT">
           <div className="col buttons-column">
 
           <button 

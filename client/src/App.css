@@ -970,14 +970,15 @@ button {
   background: rgb(218, 207, 207);
 }
 
-.footerT {
-  padding: 10px 0px;
-  border-top: thin solid #777;
-}
 .footerTT {
   text-align: left;
   padding-left: 15px;
   margin-left: 10px;
   /* display: inline-block; */
   max-width: 300px;
+}
+
+.durationT {
+  margin-top: 90px;
+  margin-bottom: 80px;
 }
