@@ -14,10 +14,10 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <Link to='/dashboard'>Boards</Link>
-      <Link to='/posts'>Posts</Link>
+      <Link to='/posts'>Member Posts</Link>
       <Link to='/profdash'>My Profile</Link>
       <Link to='/profiles'>Browse Members</Link>
-      <Link to='/pomodoro'>Timer</Link>
+      <Link to='/pomodoro'>Task Timer</Link>
       <Link to='/' onClick={() => dispatch(logout())}>
         Logout
       </Link>
