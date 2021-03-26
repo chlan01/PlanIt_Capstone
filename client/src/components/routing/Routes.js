@@ -17,6 +17,8 @@ import Profiles from '../profiles/Profiles';
 import Profile from '../profile/Profile';
 import Pom from '../pom-timer/Pom';
 
+// import Contact from '../../../public/contact.handlebars';
+
 // Routes are protected and it always checks if the user is authenticated in order to navigate -- (see ./routing/PrivateRoute.js)
 
 const Routes = props => {
@@ -24,6 +26,7 @@ const Routes = props => {
       <section className="container">
         <Alert />
         <Switch>
+          {/* <Route exact path="/contact" component={Contact} /> */}
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
           <PrivateRoute exact path="/dashboard" component={Dashboard} />

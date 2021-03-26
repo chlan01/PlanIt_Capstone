@@ -5,6 +5,9 @@ require('dotenv').config();
 
 const app = express();
 
+const exphbs = require('express-handlebars');
+const nodemailer = require('nodemailer');
+
 
 // Connect database
 (async function connectDB() {
@@ -25,6 +28,11 @@ const app = express();
 
 // Init middleware
 app.use(express.json({ extended: false }));
+
+///////////////////////////////////////////////////////////////
+
+
+  ///////////////////////////////////////////////////////////////
 
 // Define routes
 app.use('/api/users', require('./routes/api/users'));
