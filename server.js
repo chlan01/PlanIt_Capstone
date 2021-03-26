@@ -5,7 +5,6 @@ require('dotenv').config();
 
 const app = express();
 
-const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
 
 
