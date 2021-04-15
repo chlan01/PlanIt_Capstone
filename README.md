@@ -5,7 +5,7 @@
 ## About
 
 <pre>
-Software Development Capstone Project
+ITC 4918 - Software Development Capstone Project
 Developer: Christos Lantzos
 Supervisor: Prof. Evgenia Vagianou
 Deree - The American College of Greece
