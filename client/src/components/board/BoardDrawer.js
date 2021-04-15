@@ -115,7 +115,7 @@ const BoardDrawer = () => {
               <Button onClick={() => setViewingArchivedCards(false)}>
                 <ChevronLeftIcon />
               </Button>
-              <h3>Archived Cards</h3>
+              <h3>Archived Tasks</h3>
               <Button onClick={handleClose}>
                 <CloseIcon />
               </Button>
