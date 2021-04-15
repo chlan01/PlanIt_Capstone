@@ -1,6 +1,6 @@
 # PlanIt
 
-## A Project Management Tool
+### A Project Management Tool
 
 ## About
 
