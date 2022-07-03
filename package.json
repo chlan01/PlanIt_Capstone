@@ -35,7 +35,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git remote add origin https://github.com/HyperEntropic/PlanIt_Capstone"
+    "url": "git remote add origin https://github.com/chlan01/PlanIt_Capstone"
   },
   "author": "Chris Lantzos",
   "license": "MIT"

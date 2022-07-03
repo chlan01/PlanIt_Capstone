@@ -5,7 +5,12 @@
 
 PlanIt is a project management web application that aims to increase the productivity of primarily teams of developers, and help streamline their workflow process. The software's primary objective is to provide a medium for teams to organize, plan, communicate, and execute their project needs. Finally, PlanIt utilizes kanban boards where teams can setup the workflow for their project tasks with different stages, a team discussion board area, and a team profile area where team members can browse other team member profiles and find information about them.  
 
-### [Project Documentation] <embed src="https://hyperentropic.github.io/PlanIt%20Documentation" type="application/pdf" />
+### [Project Documentation]
+<iframe>
+    <p>The view the detailed project documentation click <a href="./planit_documentation/PlanIt Documentation.pdf">here</a>..</p>
+</iframe>
+
+
 
 ## Application Preview
 
