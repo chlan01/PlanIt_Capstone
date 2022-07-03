@@ -52,7 +52,7 @@ cd client
 npm install
 ```
 
-### Run the server from the root directory
+### Run the server and client from the root directory
 ```
 cd .. 
 npm run dev
