@@ -7,7 +7,7 @@ PlanIt is a project management web application that aims to increase the product
 
 ### [Project Documentation]
 <body>
-    <p> <a href="./planit_documentation/PlanIt Documentation.pdf">Detailed project documentation.</a>.</p>
+    <p> View the detailed project documentation<a href="./planit_documentation/PlanIt Documentation.pdf">here</a></p>
 </body>
 
 
