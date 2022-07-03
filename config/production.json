@@ -1,6 +1,7 @@
 {
-    "mongoURI": "mongodb+srv://Chris123:Chris123@testdb.7qdo1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    "jwtSecret": "mysecretkey",
-    "githubToken": "97cc87405f90f46eeb51fea219616cacc7a53d41"
+    "mongoURI": "your_mongoDB_Atlas_uri_with_credentials",
+    "jwtSecret": "a_random_sequence",
+    "githubToken": "your_secret_access_token"
          
     }
+
