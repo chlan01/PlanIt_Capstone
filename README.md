@@ -12,18 +12,18 @@ PlanIt is a project management web application built using the MERN stack that a
 
 <img src='./preview_files/planit_board_preview.gif'>
 
-<img src='./preview_files/planit_members_preview.gif>
+<img src='./preview_files/planit_members_preview.gif'>
 
 The user can create a new account or use the following credentials to login:
 
 ```
-john.smith.capstone.2021@gmail.com
+Username:   john.smith.capstone.2021@gmail.com
 
-Capstone2021
+Password:   Capstone2021
 ```
 
 
-<a href="https://imgur.com/a/9Hix32A">More application images</a>
+### <a href="https://imgur.com/a/9Hix32A">More application images</a>
 
 
 ## Deployment 
