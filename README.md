@@ -1,6 +1,8 @@
 # PlanIt <img src='./preview_files/planIt_logo_v2.png'>
 
-![PlanIt](src='./preview_files/planIt_logo_v2.png'){ width=60%,height:30px }
+#<img src="./preview_files/planIt_logo_v2.png" alt="alt text" title="plantIt_logo_v2" width="100" hight="100"/>
+
+
 
 ### A Project Management Tool
 
