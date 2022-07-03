@@ -1,5 +1,14 @@
 # <img src='./preview_files/planIt_logo_v2.png' width="180" hight="180">
-# A Project Management Tool
+
+# <figure>
+  <img
+  src='./preview_files/planIt_logo_v2.png'
+  alt="PlanIt."
+  width="180" 
+  hight="180">
+  <figcaption>A Project Management Tool</figcaption>
+</figure>
+## A Project Management Tool
 
 ## About
 
