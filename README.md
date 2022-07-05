@@ -58,12 +58,6 @@ cd ..
 npm run dev
 ```
 
-## [Project Documentation]
-<body>
-    <p> View the detailed project documentation <a href="./planit_documentation/PlanIt Documentation.pdf">here</a>.</p>
-</body>
-
-
 
 ## Misc 
 <pre>
